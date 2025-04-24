@@ -6,4 +6,6 @@ cp -rf /home/peng/rv1106/luckfox-pico/sysdrv/source/uboot/u-boot/configs/lico_rv
 cp -rf /home/peng/rv1106/luckfox-pico/sysdrv/source/kernel/arch/arm/configs/lico_rv1106_linux_defconfig ./lico_project_file
 cp -rf /home/peng/rv1106/luckfox-pico/sysdrv/tools/board/buildroot/lico_defconfig ./lico_project_file
 cp -rf /home/peng/rv1106/luckfox-pico/sysdrv/source/uboot/u-boot/arch/arm/mach-rockchip/make_fit_uboot.sh ./lico_project_file
-cp -rf /home/peng/rv1106/luckfox-pico/sysdrv/Makefile ./lico_project_file 
+cp -rf /home/peng/rv1106/luckfox-pico/sysdrv/Makefile ./lico_project_file
+
+echo "copy files finished!"

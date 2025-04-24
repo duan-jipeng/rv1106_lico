@@ -7,3 +7,5 @@ cp -rf ./lico_project_file/lico_rv1106_linux_defconfig ./sdk/sysdrv/source/kerne
 cp -rf ./lico_project_file/lico_defconfig ./sdk/sysdrv/tools/board/buildroot
 cp -rf ./lico_project_file/make_fit_uboot.sh ./sdk/sysdrv/source/uboot/u-boot/arch/arm/mach-rockchip
 cp -rf ./lico_project_file/Makefile ./sdk/sysdrv
+
+echo "build lico finished!"
