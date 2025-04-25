@@ -8,6 +8,14 @@ cp -rf ./lico_project_file/lico_defconfig ./sdk/sysdrv/tools/board/buildroot
 cp -rf ./lico_project_file/make_fit_uboot.sh ./sdk/sysdrv/source/uboot/u-boot/arch/arm/mach-rockchip
 cp -rf ./lico_project_file/Makefile ./sdk/sysdrv
 
+
+cp -rf ./lico_project_file/fb_st7789v.c ./sdk/sysdrv/source/kernel/drivers/staging/fbtft
+
+# cp -rf ./lico_project_file/focaltech_core.c ./sdk/sysdrv/source/kernel/drivers/input/touchscreen/focaltech_touch
+# cp -rf ./lico_project_file/focaltech_core.h ./sdk/sysdrv/source/kernel/drivers/input/touchscreen/focaltech_touch
+# ./build.sh kernelconfig focaltect y
+
+
 mkdir -p ./sdk/external/lib/firmware/rtlwifi/
 
 
