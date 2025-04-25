@@ -10,7 +10,7 @@
 #include "rv1106-lico-ipc.dtsi"
 
 / {
-	model = "Echo Mate";
+	model = "Lico";
 	compatible = "rockchip,rv1103g-38x38-ipc-v10", "rockchip,rv1106";
 };
 
