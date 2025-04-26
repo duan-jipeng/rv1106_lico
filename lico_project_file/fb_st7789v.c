@@ -158,23 +158,26 @@ static int set_var(struct fbtft_par *par)
 {
 	u8 madctl_par = 0;
 
-	if (par->bgr)
-		madctl_par |= MADCTL_BGR;
-	switch (par->info->var.rotate) {
-	case 0:
-		break;
-	case 90:
-		madctl_par |= (MADCTL_MV | MADCTL_MY);
-		break;
-	case 180:
-		madctl_par |= (MADCTL_MX | MADCTL_MY);
-		break;
-	case 270:
-		madctl_par |= (MADCTL_MV | MADCTL_MX);
-		break;
-	default:
-		return -EINVAL;
-	}
+	// if (par->bgr)
+	// 	madctl_par |= MADCTL_BGR;
+	// switch (par->info->var.rotate) {
+	// case 0:
+	// 	break;
+	// case 90:
+	// 	madctl_par |= (MADCTL_MV | MADCTL_MY);
+	// 	break;
+	// case 180:
+	// 	madctl_par |= (MADCTL_MX | MADCTL_MY);
+	// 	break;
+	// case 270:
+	// 	madctl_par |= (MADCTL_MV | MADCTL_MX);
+	// 	break;
+	// default:
+	// 	return -EINVAL;
+	// }
+
+	madctl_par &= 0x1F;
+	madctl_par |= (MADCTL_MV | MADCTL_MY);
 	write_reg(par, MIPI_DCS_SET_ADDRESS_MODE, madctl_par);
 	return 0;
 }
