@@ -1,0 +1,33 @@
+#!/bin/sh
+
+wifi_up()
+{
+    cd /oem/usr/ko
+    insmod libarc4.ko
+    insmod cfg80211.ko
+    insmod mac80211.ko
+    insmod r8723bs.ko
+
+    ifconfig wlan0 up
+
+    mkdir -p /var/run/wpa_supplicant
+
+    wpa_supplicant -B -c /etc/wpa_supplicant.conf -i wlan0
+
+    udhcpc -i wlan0
+}
+
+
+case $1 in
+        start)
+                echo "start"
+                wifi_up
+                echo "wifi up success!"
+                ;;
+        stop)
+                echo "stop"
+                ;;
+        *)
+                exit 1
+                ;;
+esac
