@@ -2,6 +2,7 @@
 
 wifi_up()
 {
+    chmod 777 /etc/wpa_supplicant.conf
     cd /oem/usr/ko
     insmod libarc4.ko
     insmod cfg80211.ko

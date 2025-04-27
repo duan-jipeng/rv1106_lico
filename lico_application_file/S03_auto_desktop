@@ -3,8 +3,8 @@
 case $1 in
         start)
                 echo "start"
-                chmod 777 ./root/main
-                ./root/main
+                chmod 777 /root/main
+                /root/main
                 echo "desktop run success!"
                 ;;
         stop)
