@@ -7,6 +7,8 @@
 
 3.Ft6336u touch rotate,  config input_report_abs of focaltech_core.c.
 
+4.Touch config at rv1106g-lico.dts.
+
 Reference link: https://blog.csdn.net/Shushan1/article/details/88661732
 
 ## 2.Wifi(rtl8723bs)
@@ -14,7 +16,8 @@ Reference link: https://blog.csdn.net/Shushan1/article/details/88661732
 
 2.Kernel config by ./build.sh kernelconfig 8723bs.
 
-Reference link: https://wiki.luckfox.com/zh/Luckfox-Pico/Luckfox-Pico-RV1103/Luckfox-Pico-RTL8723bsfocaltect_touch
+Reference link: https://wiki.luckfox.com/zh/Luckfox-Pico/Luckfox-Pico-RV1103/Luckfox-Pico-RTL8723bs
+
 
 ## 3.Logo
 1.Replace the file <Luckfox Pico SDK>/sysdrv/source/kernel/drivers/video/logo/logo_linux_clut224.ppm.
