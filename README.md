@@ -7,7 +7,7 @@
 
 3.Ft6336u touch rotate,  config input_report_abs of focaltech_core.c.
 
-4.Touch config at rv1106g-lico.dts.
+4.Touch rotate configs at rv1106g-lico.dts.
 
 Reference link: https://blog.csdn.net/Shushan1/article/details/88661732
 
@@ -37,6 +37,8 @@ Reference link: https://forums.luckfox.com/viewtopic.php?t=1165
 
 ## 5.Audio and record
 1.Audio paly: aplay *.wav.
+
+Audio test download address: https://samplelib.com/zh/sample-wav.html
 
 2.Record: arecord -f S16_LE -c 2 -r 16000 -D hw:0 -d 30 test.wav
 
