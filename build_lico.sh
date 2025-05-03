@@ -24,3 +24,7 @@ cp -rfvd ./lico_project_file/focaltech_core.h ./sdk/sysdrv/source/kernel/drivers
 # 3.wifi(8723bs)
 mkdir -p ./sdk/external/lib/firmware/rtlwifi
 cp -rfvd ./lico_project_file/rtl8723bs_nic.bin ./sdk/external/lib/firmware/rtlwifi
+
+
+# 4.logo
+cp -rfvd ./lico_project_file/logo_linux_clut224.ppm ./sdk/sysdrv/source/kernel/drivers/video/logo/

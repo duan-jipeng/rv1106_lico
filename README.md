@@ -5,7 +5,7 @@
 
 2.Ft6336u needs to be configed in kernelconfig(focaltect touchscreen, by seaching goodix in kernelmenuconfig), and remove focaltech_test folder.
 
-3.Ft6336u touch rotate,  config input_report_abs fo focaltech_core.c.
+3.Ft6336u touch rotate,  config input_report_abs of focaltech_core.c.
 
 Reference link: https://blog.csdn.net/Shushan1/article/details/88661732
 
@@ -32,4 +32,9 @@ Reference link: https://forums.luckfox.com/viewtopic.php?t=1165
 
 2.Set proper priority for app, such as wifi, needed to launch after other drivers launched.
 
+## 5.Audio and record
+1.Audio paly: aplay *.wav.
 
+2.Record: arecord -f S16_LE -c 2 -r 16000 -D hw:0 -d 30 test.wav
+
+Reference: https://wiki.luckfox.com/zh/Luckfox-Pico/Luckfox-Pico-Ultra-W-Audio/
