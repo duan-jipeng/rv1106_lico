@@ -1,6 +1,6 @@
 # rv1106_demo
 
-If you just verify functions, follows the Configure step part, and don't care the part of drivers develop.
+If you just verify functions, follows the configure step part, and don't care the part of drivers develop.
 
 ## Configure step
 
@@ -8,7 +8,7 @@ If you just verify functions, follows the Configure step part, and don't care th
 
 2.sudo apt-get install -y git ssh make gcc gcc-multilib g++-multilib module-assistant expect g++ gawk texinfo libssl-dev bison flex fakeroot cmake unzip gperf autoconf device-tree-compiler libncurses5-dev pkg-config bc python-is-python3 passwd openssl openssh-server openssh-client vim file cpio rsync
 
-3.git clone https://github.com/duan-jipeng/rv1106_demo.git
+3.git clone https://github.com/duan-jipeng/rv1106_lico.git
 
 cd rv1106_demo
 
